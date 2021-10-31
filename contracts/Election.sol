@@ -18,7 +18,8 @@ contract Election {
     uint public candidatesCount;
 
     constructor () public {
-        // TODO set default candidates
+        addCandidate("Carrot");
+        addCandidate("Potato");
     }
 
     function addCandidate (
