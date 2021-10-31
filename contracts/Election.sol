@@ -24,7 +24,9 @@ contract Election {
     function addCandidate (
         string memory _name
     ) private {
-        // TODO store new candidate in state variables
+        candidatesCount++;
+        candidates[candidatesCount] =
+            Candidate(candidatesCount, _name, 0);
     }
 
     function vote (
